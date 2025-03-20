@@ -4,8 +4,10 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-footer',
     template: `<div class="layout-footer">
-        SAKAI by
-        <a href="https://primeng.org" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">PrimeNG</a>
+        Copyright &copy;
+        <strong>2025&nbsp;<a href="https://intes.in/" target="_blank">Intes</a></strong>. All Rights Reserved
     </div>`
 })
-export class AppFooter {}
+export class AppFooter {
+    date = new Date();
+}
